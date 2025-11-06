@@ -1,0 +1,218 @@
+
+
+/* CheckoutPage */
+
+
+
+
+
+.checkout-page-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.checkout-page-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.checkout-grid > div {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.checkout-item:last-child {
+  border-bottom: none;
+}
+
+.total {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form h3 {
+  margin-bottom: 12px;
+}
+
+.checkout-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.checkout-form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.checkout-form p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.checkout-form .error {
+  color: red;
+  margin-bottom: 12px;
+}
+
+.checkout-form button {
+  padding: 12px;
+  background-color: #6772e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.checkout-form button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.checkout-form button:hover:not(:disabled) {
+  background-color: #5469d4;
+}
+
+
+
+/* Payment Status */
+
+
+
+
+.payment-status-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.payment-status-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-status-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.payment-status-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.payment-status-container a:hover {
+  background-color: #005ac1;
+}
+
+
+
+ 
+/* Product List  */
+
+
+.product-list-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.product-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.product-card strong {
+  font-size: 1rem;
+  color: #000;
+}
+
+.product-card button {
+  margin-top: auto;
+  padding: 10px 16px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.product-card button:hover {
+  background: #005bb5;
+}
